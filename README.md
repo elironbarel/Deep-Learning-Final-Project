@@ -47,10 +47,12 @@ The model is implemented using **PyTorch** and follows a CNN-based approach:
 ```sh
 git clone https://github.com/your-repo/deep-learning-dog-identification.git
 cd deep-learning-dog-identification
+```
 
 ### 2. **Install Dependencies**
 ```sh
 pip install -r requirements.txt
+```
 
 ### 3. **Download and Prepare the Dataset**
 
@@ -59,10 +61,12 @@ Ensure you have the **Stanford Dogs Dataset** and the **specific dog images** st
 ### 4. **Train the Model**
 ```sh
 python src/train.py
+```
 
 ### 5. **Evaluate the Model**
 ```sh
 python src/evaluate.py
+```
 
 ### 6. **Test on New Images**
 
@@ -70,6 +74,7 @@ Run the script to classify a new image:
 
 ```sh
 python src/predict.py --image test_image.jpg
+```
 
 
 ## Project Structure
@@ -91,6 +96,7 @@ python src/predict.py --image test_image.jpg
 │   ├── analysis.ipynb      # Data exploration and model performance analysis
 │── README.md               # Project documentation
 │── requirements.txt        # Python dependencies
+```
 
 ## Future Improvements
 
