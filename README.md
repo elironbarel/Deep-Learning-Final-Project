@@ -47,3 +47,60 @@ The model is implemented using **PyTorch** and follows a CNN-based approach:
 ```sh
 git clone https://github.com/your-repo/deep-learning-dog-identification.git
 cd deep-learning-dog-identification
+
+### 2. **Install Dependencies**
+```sh
+pip install -r requirements.txt
+
+### 3. **Download and Prepare the Dataset**
+
+Ensure you have the **Stanford Dogs Dataset** and the **specific dog images** stored in the appropriate directories.
+
+### 4. **Train the Model**
+```sh
+python src/train.py
+
+### 5. **Evaluate the Model**
+```sh
+python src/evaluate.py
+
+### 6. **Test on New Images**
+
+Run the script to classify a new image:
+
+```sh
+python src/predict.py --image test_image.jpg
+
+
+## Project Structure
+```bash
+/deep-learning-dog-identification
+│── data/
+│   ├── specific_dog/       # Target dog images
+│   ├── all_dogs/           # Other dogs dataset
+│   ├── augmented/          # Augmented images of the target dog
+│── models/
+│   ├── model.pth           # Saved trained model
+│── src/
+│   ├── dataset.py          # Dataset loading and preprocessing
+│   ├── model.py            # CNN architecture
+│   ├── train.py            # Training script
+│   ├── evaluate.py         # Evaluation script
+│   ├── predict.py          # Image classification script
+│── notebooks/
+│   ├── analysis.ipynb      # Data exploration and model performance analysis
+│── README.md               # Project documentation
+│── requirements.txt        # Python dependencies
+
+## Future Improvements
+
+- Implement transfer learning using a pre-trained CNN (e.g., ResNet or VGG16).
+- Experiment with different architectures to enhance accuracy.
+- Deploy the model as a web application for real-time image classification.
+
+## Contributors
+
+- Eliron Barel
+- Ohad Maymon
+
+For questions or suggestions, feel free to open an issue in the repository.
